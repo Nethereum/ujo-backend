@@ -2,7 +2,7 @@
 
 This is the deprecated Ujo Backend Ethereum integration using Nethereum, Blockchain Processing, Data Processing, Azure Search, Azure Table Storage, Queuing, Web jobs and Ipfs. Whilts the deprication seemed necessary at the time, due the mainnet constrains with the storage of data, cost and scalability, the solution and structure is still valid on other smart contract data driven scenarios (permissioned chains, consortiums, sidechains, etc)
 
-This solutions focuses on having a registry with millions of smart contracts (ie artists or works), so it becomes rather hard to create filter logs using the bloom filters for that amount of smart contracts to do later further data processing. 
+The solution for this problem domain focuses on the performance needs required to monitor and process events and log changes of millions of smart contracts (ie artists or works) which are part of common registry. It becomes rather hard to create and maintain filter logs using the bloom filters for that huge amount of smart contracts, which will then be queued or injected interface implentation for further processing of the smart contract changes.
 
 The backend solution is split in several parts:
 
