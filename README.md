@@ -1,6 +1,6 @@
 # Ujo Nethereum backend reference architecture
 
-This Backend Ethereum integration uses Nethereum, Blockchain Processing, Data Processing, Azure Search, Azure Table Storage, Queuing, Web jobs and Ipfs. The Ujo elements were deprecated due to a change on architecture direction but a good reference architecture to get started on smart contract data driven scenarios (permissioned chains, consortiums, sidechains, etc), also it fits other requirements which may not be specific to smart contract data events, another could be the monitoring of ERC20 tokens in a DEX registry. 
+This Backend Ethereum integration uses Nethereum, Blockchain Processing, Data Processing, Azure Search, Azure Table Storage, Queuing, Web jobs and Ipfs. The Ujo elements were deprecated due to a change on architecture direction, but this serves as an example reference architecture on smart contract data driven scenarios (permissioned chains, consortiums, sidechains, etc), and the integration with cloud components in Azure. 
 
 The solution for this problem domain focuses on the performance needs required to monitor and process events and log changes of millions of smart contracts (ie artists or works) which are part of common registry. It becomes rather hard to create and maintain filter logs using the bloom filters for that huge amount of smart contracts, which will then be queued or injected interface implentation for further processing of the smart contract changes.
 
@@ -51,10 +51,13 @@ The IPFS image services provide a webjob queing processing to resize ipfs hosted
 
 •	Simple Ethereum integration https://github.com/Nethereum/ujo-backend/tree/master/Ujo.Work/Ujo.Work.Services.Ethereum
 
-## Future
+## Road map and Future
 
-The Nethereum blockchain processing layer now is moving into the specific smart contract Data area, which is the hardening of the above in the same ways as we have done with the hardening of the generic blockchain processing, providing a common data layer for domain specific solutions like Music, Commerce, frameworks like the Wonka Rule Engine and other future backend data processing (Ml.Net)
+* The generic blockchain processing and log processing have been hardened and simplified for usage in the Nethereum.BlockchainProcessing project.
 
+* The Standard Data and Registry will be refactored in the near future to provide a basic smart contract data repository layer, with generic support also for all the cloud components like Search, Storage, Processing (Web jobs), Machine learning (ML.net) etc.
+
+* All these components will be the basis for other specific domain solutions like Commerce or integrated with the Wonka Rule Engine.
 
 # Thanks and credits
 All the love to the Ujo team at the time
