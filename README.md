@@ -1,4 +1,4 @@
-# Ujo Backend
+# Ujo Nethereum backend reference architecture
 
 This is the deprecated Ujo Backend Ethereum integration using Nethereum, Blockchain Processing, Data Processing, Azure Search, Azure Table Storage, Queuing, Web jobs and Ipfs. Whilts the deprication seemed necessary at the time, due the mainnet constrains with the storage of data, cost and scalability, the solution and structure is still valid on other smart contract data driven scenarios (permissioned chains, consortiums, sidechains, etc), also it fits other requirements which may not be specific to smart contract data events, another could be the monitoring of ERC20 tokens in a DEX registry. 
 
