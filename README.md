@@ -24,7 +24,13 @@ The registry processing component provides the components to monitor and backend
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.Contracts.Registry.Processing
 
 ### Data Processing, a common data processing layer 
+The standard data processing component allows to monitor and backend processing all the data changed events of contracts which follow the standard.
 
+#### Standard DataLog Processor
+The StandardDataLogProcessor is an implementation of the ILogProcessor, allowing it to be plugged into the Blockchain Log Processor.
+The log processor validates matching event logs and if contracts belong to the standard data registry.
+#### IStandardDataProcessingService
+Different implementations of the IStandardDataProcessingService can be configured / registered either by code or Queues. Current implementations stores the data in Azure Search for indexing, Azure Table Storage and Azure Sql.
 
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.Contracts.StandardData.Processing
 
