@@ -10,6 +10,12 @@ The backend solution is split in several parts:
 The CCC layer or common infrastructure layer, this is the current reference architecture for Nethereums Blokchain Log Processing and Smart contract data processing.
 
 ### Blockchain Processing 
+
+The blockchain processing component provides a pluggable infrastructure to monitor and process transactions, smart contracts changes on state and / or events (logs) raised.
+
+For example, the continuous processing and monitoring of token transfers (Erc20) made by a specific address, or in a more complex scenario the monitoring and processing of all the transactions made by many token contracts (Erc20) registered in an exchange.
+Processing can be of any type, storage of transaction history, indexing of data, data analytics, monitoring of payments, etc.
+
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.BlockchainProcessing
 
 ### Registry Processing, a common smart contract registry service
