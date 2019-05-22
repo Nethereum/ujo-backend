@@ -19,9 +19,13 @@ Processing can be of any type, storage of transaction history, indexing of data,
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.BlockchainProcessing
 
 ### Registry Processing, a common smart contract registry service
+The registry processing component provides the components to monitor and backend processing of registration and unregistrations of addresses on a standard registration contract.
+
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.Contracts.Registry.Processing
 
 ### Data Processing, a common data processing layer 
+
+
 https://github.com/Nethereum/ujo-backend/tree/master/Consensys.Common/CCC.Contracts.StandardData.Processing
 
 ## Other commmon services:
